@@ -9,19 +9,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <style>
+        /* Updated to Wine Red Theme */
         body { font-family: 'Times New Roman', serif; background-color: #fdfdfd; }
-        .navbar { background-color: #002147; }
+        
+        .navbar { background-color: #800020; } /* Wine Red / Burgundy */
+        
         .hero-section {
-            background: #e9ecef;
+            background: #f8f1f1;
             padding: 60px 20px;
-            border-bottom: 5px solid #002147;
+            border-bottom: 5px solid #800020; /* Wine Red Border */
             margin-bottom: 30px;
         }
+        
         .nav-link, .navbar-brand { color: white !important; }
-        .card { border: none; border-left: 4px solid #002147; margin-bottom: 20px; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; }
-        footer { background: #343a40; color: white; padding: 30px; margin-top: 50px; }
-        .btn-primary { background-color: #002147; border: none; }
+        
+        /* Cards now have Wine Red accents */
+        .card { border: none; border-left: 4px solid #800020; margin-bottom: 20px; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(128,0,32,0.1) !important; }
+        
+        .btn-primary { background-color: #800020; border: none; }
+        .btn-primary:hover { background-color: #600018; }
+        
+        footer { background: #2c000b; color: white; padding: 30px; margin-top: 50px; }
     </style>
 </head>
 <body>
@@ -29,27 +38,11 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="index.html">Proposal</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Adivasi Literature
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="literature.html">Overview</a></li>
-                            <li><a class="dropdown-item" href="authors.html">Prominent Authors</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="oral-traditions.html">Oral Traditions (Orature)</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link" href="mapping.html">Cultural Mapping</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reading-list.html">Reading List</a></li>
                 </ul>
             </div>
         </div>
@@ -57,68 +50,18 @@
 
     <header class="hero-section text-center">
         <div class="container">
-            <h1 class="display-4">Digital Humanities Workshop</h1>
+            <h1 class="display-4" style="color: #800020;">Digital Humanities Workshop</h1>
             <p class="lead">Exploring the intersection of Technology and Culture.</p>
         </div>
     </header>
 
     <main class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card p-3 shadow-sm">
-                    <h5>Quick Info</h5>
-                    <p><strong>Dates:</strong> Jan 12 - 17, 2026</p>
-                    <p><strong>Location:</strong> IIT Delhi / Virtual</p>
-                    <hr>
-                    <p>This site is created under trial.</p>
-                </div>
-            </div>
             <div class="col-md-8">
                 <h3>Welcome</h3>
-                <p>Welcome to the official repository for the <strong>Introduction to Digital Humanities</strong> workshop. This site is hosted for free using GitHub Pages.</p>
+                <p>Focusing on the <strong>Adivasi Literature of Jharkhand</strong>, this workshop explores digital archives and storytelling.</p>
             </div>
         </div>
 
-        <hr class="my-5">
-
-        <h3 class="text-center mb-4">Explore Sections</h3>
         <div class="row mt-4">
-            <div class="col-md-6">
-                <div class="card p-4 shadow-sm text-center">
-                    <h4>Workshop Schedule</h4>
-                    <p>View the full day-by-day breakdown of the events.</p>
-                    <a href="schedule.html" class="btn btn-primary">Go to Schedule</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card p-4 shadow-sm text-center">
-                    <h4>Reading List</h4>
-                    <p>Access PDF resources, Adivasi texts, and links.</p>
-                    <a href="resources.html" class="btn btn-primary">Open Resources</a>
-                </div>
-            </div>
-        </div>
-
-        <hr class="my-5">
-
-        <div class="row">
-            <div class="col-12">
-                <h4 id="schedule">Workshop Content</h4>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><strong>Day 1:</strong> Introduction to Text Analysis</li>
-                    <li class="list-group-item"><strong>Day 2:</strong> Data Visualization for Humanists</li>
-                    <li class="list-group-item"><strong>Day 3:</strong> Mapping and GIS</li>
-                </ul>
-            </div>
-        </div>
-    </main>
-
-    <footer class="text-center">
-        <div class="container">
-            <p>&copy; 2026 Digital Humanities Workshop.</p>
-            <p class="text-muted small">Coded with excellence by <strong>Muntaha</strong></p>
-        </div>
-    </footer>
-
-</body>
-</html>
+            <div class="

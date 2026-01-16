@@ -3,19 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
+    <title>My Portfolio | GitHub Hosted</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f4f4f4; }
-        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: inline-block; }
-        h1 { color: #333; }
-        p { color: #666; }
+        /* CSS: This makes the website look modern */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f2f5;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #24292e; /* GitHub Dark Gray */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2ea44f; /* GitHub Green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover { background: #2c974b; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Hello World!</h1>
-        <p>This website is hosted directly from a GitHub repository.</p>
-        <p>Current Year: 2026</p>
+
+    <nav>
+        <h2>My GitHub Website</h2>
+    </nav>
+
+    <header>
+        <h1>Welcome to My Digital Space</h1>
+        <p>Built with GitHub Pages • 2026</p>
+        <a href="#about" class="btn">Learn More</a>
+    </header>
+
+    <div id="about" class="container">
+        <h3>About This Project</h3>
+        <p>This is a live website hosted directly from a GitHub repository. It uses <strong>HTML5</strong> for structure and <strong>CSS3</strong> for the beautiful layout.</p>
+        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+        <h3>Why GitHub Pages?</h3>
+        <ul>
+            <li><strong>Fast:</strong> Powered by GitHub's global servers.</li>
+            <li><strong>Secure:</strong> Includes automatic SSL (HTTPS).</li>
+            <li><strong>Easy:</strong> Just change your code, and the site updates.</li>
+        </ul>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Hosted by GitHub. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
